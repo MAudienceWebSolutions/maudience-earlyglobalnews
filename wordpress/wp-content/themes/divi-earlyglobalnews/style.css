@@ -1,0 +1,142 @@
+/*
+ Theme Name:     Early Global News - Divi Child Theme
+ Theme URI:      http://www.earlyglobalnews.com/
+ Description:    Early Global News - Divi Child Theme
+ Author:         Maudience.Com
+ Author URI:     http://www.maudience.com/
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+@import url("../Divi/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/** Custom CSS **/
+
+#top-menu li.current-menu-item {
+	background: #791414;
+}
+
+#top-menu li.current-menu-item > a {
+	color: #ffffff !important;
+}
+
+#main-header {
+	border-bottom: 5px solid #791414;
+}
+
+
+#top-menu li {
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+	padding-top: 7px;
+}
+
+#top-menu > li:last-child {
+    padding-right: 15px;
+}
+
+#top-menu a:hover {
+    color: #F1EEDD;
+}
+
+#main-header, #main-header .nav li ul, .et-search-form, #main-header .et_mobile_menu {
+	background: #30557b; /* Old browsers */
+	background: -moz-linear-gradient(top, #30557b 0%, #112941 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#30557b), color-stop(100%,#112941)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #30557b 0%,#112941 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #30557b 0%,#112941 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #30557b 0%,#112941 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #30557b 0%,#112941 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30557b', endColorstr='#112941',GradientType=0 ); /* IE6-9 */
+}
+
+#et-top-navigation {
+	background: #3b6793; /* Old browsers */
+	background: -moz-linear-gradient(top, #3b6793 13%, #122a43 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,#3b6793), color-stop(100%,#122a43)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #3b6793 13%,#122a43 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #3b6793 13%,#122a43 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #3b6793 13%,#122a43 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #3b6793 13%,#122a43 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b6793', endColorstr='#122a43',GradientType=0 ); /* IE6-9 */
+}
+
+.et_pb_section {
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+.et_pb_column {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.et_pb_column_2_3 {
+    width: 680px;
+}
+
+.et_pb_column_1_3 {
+	margin-left: 0px;
+}
+
+.et_pb_widget_area_left {
+    border: none !important;
+}
+
+#et-main-area {
+	background: #F1EEDD !important;
+}
+
+#main-content, .et_pb_section {
+    background-color: #F1EEDD;
+}
+
+.et_pb_widget li a:hover {
+    color: #000000 !important;
+	text-decoration: underline;
+}
+
+.et_pb_row {
+	background-color: #ffffff;
+}
+
+#main-content .container {
+	background: #ffffff;
+}
+
+
+.et_right_sidebar #left-area {
+    float: left;
+    margin-right: 20px;
+	margin-left: 20px;
+    width: 680px;
+}
+
+
+.et_right_sidebar #sidebar {
+    float: left;
+    width: 319px;
+	border-left: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+ #main-content .container:before { height: 1%; width: 0px; background-color: transparent; }
+
+ .et_pb_bg_layout_dark, .et_pb_bg_layout_dark h1, .et_pb_bg_layout_dark h2, .et_pb_bg_layout_dark h3, .et_pb_bg_layout_dark h4, .et_pb_bg_layout_dark h5, .et_pb_bg_layout_dark h6 {
+  color: black !important;
+}
+
+.page-id-223 article > p { display: none; }
+
+.page-id-223 .et_pb_column_3_4 {
+  width: 650px;
+  max-width: 65%;
+}
+
+.page-id-223 .et_pb_column_1_4 {
+  width: 345px;
+}
