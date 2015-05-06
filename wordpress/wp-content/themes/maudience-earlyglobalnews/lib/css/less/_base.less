@@ -38,7 +38,15 @@
             
             .site { box-shadow: none; }
 
-            .site-header { .egn-blue-gradient; }
+            .site-header {
+                .egn-gradient-blue;
+                border-bottom: 5px solid @child-color-maroon;
+                padding-bottom: 0;
+            }
+
+            #main { background-color: @child-background-color; }
+
+            #inner-main-wrap { background-color: white; }
 
             footer[role="contentinfo"] { background-color: @child-footer-color; }
         }
@@ -48,6 +56,90 @@
 
     /*  ******************************** HEADER ********************************  */
     /*  ******************************** MENUS AND NAVIGATION ********************************  */
+
+        .main-navigation {
+            .egn-gradient-bluelite;
+            height: 54px;
+            margin-top: 0;
+
+            div.nav-menu {
+            
+                > ul { 
+                    border: none;
+                    width: auto;
+
+                    li {
+                        padding: 7px 15px 0;
+                        margin-right: 0;
+                    }
+                }
+
+                a {
+                    -webkit-background-clip: border-box;
+                    -webkit-background-origin: padding-box;
+                    -webkit-background-size: auto;
+                    -webkit-font-smoothing: antialiased;
+                    background-attachment: scroll;
+                    background-clip: border-box;
+                    background-color: rgba(0, 0, 0, 0);
+                    background-image: none;
+                    background-origin: padding-box;
+                    background-size: auto;
+                    border-bottom-color: rgb(255, 255, 255);
+                    border-bottom-style: none;
+                    border-bottom-width: 0px;
+                    border-image-outset: 0px;
+                    border-image-repeat: stretch;
+                    border-image-slice: 100%;
+                    border-image-source: none;
+                    border-image-width: 1;
+                    border-left-color: rgb(255, 255, 255);
+                    border-left-style: none;
+                    border-left-width: 0px;
+                    border-right-color: rgb(255, 255, 255);
+                    border-right-style: none;
+                    border-right-width: 0px;
+                    border-top-color: rgb(255, 255, 255);
+                    border-top-style: none;
+                    border-top-width: 0px;
+                    color: rgb(255, 255, 255);
+                    cursor: auto;
+                    display: block;
+                    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    height: 35px;
+                    line-height: 40px;
+                    list-style-image: none;
+                    list-style-position: outside;
+                    list-style-type: none;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 0;
+                    outline-color: rgb(255, 255, 255);
+                    outline-style: none;
+                    outline-width: 0;
+                    padding-bottom: 14px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 0;
+                    position: relative;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    vertical-align: baseline;
+                    width: 63.890625px;
+                }
+
+                li.current_page_item {
+                    a {
+                        background-color: @child-color-maroon;
+                    }
+                }
+            }
+        }
+
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 
