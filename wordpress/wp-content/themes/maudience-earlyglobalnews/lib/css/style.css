@@ -83,13 +83,8 @@ body #inner-main-wrap {
 body footer[role="contentinfo"] {
   background-color: white;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Droid Sans', Helvetica, Arial, Lucida, sans-serif;
+body .site-content article {
+  border-bottom: none;
 }
 /* SHELL STYLES
 *****************************************************************/
@@ -107,15 +102,15 @@ h6 {
   height: 54px;
   margin-top: 0;
 }
-.main-navigation div.nav-menu > ul {
+.main-navigation .menu-primary-menu-container > ul {
   border: none;
   width: auto;
 }
-.main-navigation div.nav-menu > ul li {
+.main-navigation .menu-primary-menu-container > ul li {
   padding: 7px 15px 0;
   margin-right: 0;
 }
-.main-navigation div.nav-menu a {
+.main-navigation .menu-primary-menu-container a {
   -webkit-background-clip: border-box;
   -webkit-background-origin: padding-box;
   -webkit-background-size: auto;
@@ -140,7 +135,7 @@ h6 {
   vertical-align: baseline;
   width: auto;
 }
-.main-navigation div.nav-menu li.current_page_item a {
+.main-navigation .menu-primary-menu-container li.current_page_item a {
   background-color: #791414;
 }
 /*  ******************************** SIDEBAR ********************************  */
@@ -196,6 +191,9 @@ h6 {
     max-width: 1040px;
     padding: 20px;
     overflow: hidden;
+  }
+  body .widget-area {
+    width: 30%;
   }
   /* SHELL STYLES
 *****************************************************************/
