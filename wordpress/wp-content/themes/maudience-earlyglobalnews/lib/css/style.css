@@ -73,7 +73,6 @@ body .site-header {
   background: linear-gradient(to bottom, #30557b 0%, #112941 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#30557b', endColorstr='#112941', GradientType=0);
   border-bottom: 5px solid #791414;
-  padding-bottom: 0;
 }
 body #main {
   background-color: #f1eedd;
@@ -83,6 +82,14 @@ body #inner-main-wrap {
 }
 body footer[role="contentinfo"] {
   background-color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Droid Sans', Helvetica, Arial, Lucida, sans-serif;
 }
 /* SHELL STYLES
 *****************************************************************/
@@ -113,30 +120,7 @@ body footer[role="contentinfo"] {
   -webkit-background-origin: padding-box;
   -webkit-background-size: auto;
   -webkit-font-smoothing: antialiased;
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: none;
-  background-origin: padding-box;
-  background-size: auto;
-  border-bottom-color: #ffffff;
-  border-bottom-style: none;
-  border-bottom-width: 0px;
-  border-image-outset: 0px;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-source: none;
-  border-image-width: 1;
-  border-left-color: #ffffff;
-  border-left-style: none;
-  border-left-width: 0px;
-  border-right-color: #ffffff;
-  border-right-style: none;
-  border-right-width: 0px;
-  border-top-color: #ffffff;
-  border-top-style: none;
-  border-top-width: 0px;
-  color: #ffffff;
+  color: white;
   cursor: auto;
   display: block;
   font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
@@ -144,26 +128,17 @@ body footer[role="contentinfo"] {
   font-weight: 500;
   height: 35px;
   line-height: 40px;
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
-  outline-color: #ffffff;
-  outline-style: none;
-  outline-width: 0;
-  padding-bottom: 14px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+  padding: 0 10px 14px;
   position: relative;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   vertical-align: baseline;
-  width: 63.890625px;
+  width: auto;
 }
 .main-navigation div.nav-menu li.current_page_item a {
   background-color: #791414;
@@ -210,6 +185,9 @@ body footer[role="contentinfo"] {
     padding: 0;
     max-width: none;
   }
+  body .site-header {
+    padding: 0;
+  }
   body .inner-wrap {
     max-width: 1080px;
     margin: auto;
@@ -222,6 +200,14 @@ body footer[role="contentinfo"] {
   /* SHELL STYLES
 *****************************************************************/
   /*  ******************************** HEADER ********************************  */
+  .inner-header-wrap > a {
+    text-align: center;
+    display: block;
+    margin: 0 0 35px;
+  }
+  .inner-header-wrap > a img {
+    box-shadow: none;
+  }
   /*  ******************************** MENUS AND NAVIGATION ********************************  */
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
