@@ -23,9 +23,9 @@ get_header(); ?>
 		<div id="content" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
+			<!-- <header class="archive-header">
 				<h1 class="archive-title"></h1>
-			</header><!-- .archive-header -->
+			</header> .archive-header -->
 
 			<?php
 			/* Start the Loop */
@@ -46,7 +46,7 @@ get_header(); ?>
 					</header>
 
 					<div class="entry-content">
-						<?php the_title(); ?>
+						<?php //the_content(); ?>
 						<?php //wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
 					<footer class="entry-meta">
