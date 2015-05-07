@@ -85,7 +85,6 @@
                     -webkit-background-size: auto;
                     -webkit-font-smoothing: antialiased;
                     color: white;
-                    cursor: auto;
                     display: block;
                     font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
                     font-size: 14px;
@@ -103,6 +102,11 @@
                     text-transform: capitalize;
                     vertical-align: baseline;
                     width: auto;
+
+                    &:hover {
+                        color: white;
+                        background-color: @child-color-maroon;
+                    }
                 }
 
                 li.current_page_item {
@@ -115,6 +119,17 @@
 
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
+
+        #footer-info {
+            line-height: 1.7em;
+
+            a { 
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 14px;
+                font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+            }
+        }
 
 /* PLUGIN STYLES
 *****************************************************************/
