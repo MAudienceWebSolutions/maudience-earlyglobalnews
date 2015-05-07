@@ -26,7 +26,18 @@ get_header(); ?>
 				$recent_posts = wp_get_recent_posts( $args );
 				foreach( $recent_posts as $recent ){
 					echo '<h1><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </h1> ';
-					echo '<p>' .   $recent["post_excerpt"] . '<p> ';
+					$my_postid = $recent["ID"];//This is page id or post id
+					$content_post = get_post($my_postid);
+					$content = $content_post->post_content;
+					$content = apply_filters('the_content', $content);
+					$content = str_replace(']]>', ']]&gt;', $content);
+					
+
+					if(rcp_is_active()) {
+					    echo $content;
+					} else {
+					    echo '<p>' .   $recent["post_excerpt"].'<p> ';
+					}
 				}
 			?>
 
