@@ -21,16 +21,14 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 				<?php comments_template( '', true ); ?>
 			<?php endwhile; // end of the loop. ?>
-
-			<h2>Recent Posts</h2>
-			<ul>
 			<?php
-				$recent_posts = wp_get_recent_posts();
+				$args = array( 'numberposts' => '1' );
+				$recent_posts = wp_get_recent_posts( $args );
 				foreach( $recent_posts as $recent ){
-					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+					echo '<h1><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </h1> ';
+					echo '<p>' .   $recent["post_excerpt"] . '<p> ';
 				}
 			?>
-			</ul>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
