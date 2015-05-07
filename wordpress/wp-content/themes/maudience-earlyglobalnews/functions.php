@@ -171,18 +171,38 @@ require_once('lib/maudience-phonenumber.php');
         //* Replace WordPress login logo with your own
         function ma_custom_login_logo() {
             echo '<style type="text/css">
-            body { font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
-            h1 a 
-            { 
-                background-image:url('.get_stylesheet_directory_uri().'/img/european-motors-menu-logo.png) !important; 
+            body {
+                font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+            }
+            h1 a { 
+                /*background-image:url('.get_stylesheet_directory_uri().'/wp-content/uploads/2015/02/cropped-egn-white-web.png) !important; */
+                background-image:url(/wp-content/uploads/2015/02/cropped-egn-white-web.png) !important; 
                 background-size: 211px auto !important;
-                height: 200px !important;
+                height: 100px !important;
                 width: 311px !important; 
                 margin-bottom: 0 !important; 
                 padding-bottom: 0 !important; 
             }
-            .login form { margin-top: 10px !important; border: 1px solid #f9be19; }
-            .login {background:#043789;}
+            .login form {
+                margin-top: 10px !important;
+                border: 1px solid #791414;
+            }
+            .login {
+                background: #F1EEDD;
+                border-top: 100px solid #F1EEDD;
+            }
+            #login {
+                background: #30557b;
+                background: -moz-linear-gradient(top, #30557b 0%, #112941 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#30557b), color-stop(100%,#112941));
+                background: -webkit-linear-gradient(top, #30557b 0%,#112941 100%);
+                background: -o-linear-gradient(top, #30557b 0%,#112941 100%);
+                background: -ms-linear-gradient(top, #30557b 0%,#112941 100%);
+                background: linear-gradient(to bottom, #30557b 0%,#112941 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#30557b", endColorstr="#112941",GradientType=0 );
+                padding: 25px;
+                border: 1px solid #791414;
+            }
             </style>';
         }
         add_action('login_head', 'ma_custom_login_logo');

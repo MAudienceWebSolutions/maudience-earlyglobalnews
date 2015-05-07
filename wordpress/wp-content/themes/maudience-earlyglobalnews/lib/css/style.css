@@ -1,8 +1,8 @@
 /* FONTS */
 @font-face {
   font-family: 'Genericons';
-  src: url('../../fonts/genericons-regular-webfont.eot');
-  src: url('../../fonts/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/genericons-regular-webfont.woff') format('woff'), url('../../fonts/genericons-regular-webfont.ttf') format('truetype'), url('../../fonts/genericons-regular-webfont.svg#genericonsregular') format('svg');
+  src: url('../fonts/genericons-regular-webfont.eot');
+  src: url('../fonts/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/genericons-regular-webfont.woff') format('woff'), url('../fonts/genericons-regular-webfont.ttf') format('truetype'), url('../fonts/genericons-regular-webfont.svg#genericonsregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -67,6 +67,7 @@ html {
 }
 body {
   background-color: #f1eedd;
+  font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
 }
 body .site {
   box-shadow: none;
@@ -93,6 +94,13 @@ body footer[role="contentinfo"] {
 }
 body .site-content article {
   border-bottom: none;
+}
+.entry-header .entry-title {
+  font-size: 26px;
+}
+p {
+  padding-bottom: 1em;
+  line-height: 1.7em;
 }
 /* SHELL STYLES
 *****************************************************************/
@@ -149,16 +157,59 @@ body .site-content article {
 .main-navigation .menu-primary-menu-container li.current_page_item a {
   background-color: #791414;
 }
+.menu-social-media-navigation-container .menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: flex-end;
+  -moz-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: flex-end;
+  -moz-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.menu-social-media-navigation-container .menu .menu-item {
+  width: 60px;
+  height: 50px;
+  margin: 0;
+}
+.menu-social-media-navigation-container .menu .menu-item a {
+  color: transparent;
+}
+.menu-social-media-navigation-container .menu .menu-item a:after {
+  color: #666;
+  font-family: "Genericons";
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.menu-social-media-navigation-container .menu .menu-item.facebook a:after {
+  content: '\f204';
+}
+.menu-social-media-navigation-container .menu .menu-item.twitter a:after {
+  content: '\f202';
+}
+.menu-social-media-navigation-container .menu .menu-item.rss a:after {
+  content: '\f413';
+}
 /*  ******************************** SIDEBAR ********************************  */
 /*  ******************************** FOOTER ********************************  */
 #footer-info {
-  line-height: 1.7em;
+  line-height: 1.7rem;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
 }
 #footer-info a {
   font-weight: 700;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+  color: #666;
 }
 /* PLUGIN STYLES
 *****************************************************************/
@@ -233,6 +284,9 @@ body .site-content article {
   /*  ******************************** MENUS AND NAVIGATION ********************************  */
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
+  footer[role="contentinfo"] {
+    padding-bottom: 50px;
+  }
   /* PLUGIN STYLES
 *****************************************************************/
   /*  ******************************** WOOCOMMERCE ********************************  */
