@@ -141,7 +141,6 @@ p {
   background: -ms-linear-gradient(top, #3b6793 13%, #122a43 100%);
   background: linear-gradient(to bottom, #3b6793 13%, #122a43 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b6793', endColorstr='#122a43', GradientType=0);
-  height: 54px;
   margin-top: 0;
 }
 .main-navigation .menu-primary-menu-container > ul {
@@ -153,9 +152,6 @@ p {
   margin-right: 0;
 }
 .main-navigation .menu-primary-menu-container a {
-  -webkit-background-clip: border-box;
-  -webkit-background-origin: padding-box;
-  -webkit-background-size: auto;
   -webkit-font-smoothing: antialiased;
   color: white;
   display: block;
@@ -292,9 +288,10 @@ p {
     max-width: 1040px;
     padding: 20px;
     overflow: hidden;
+    margin-bottom: 50px;
   }
-  body .widget-area {
-    width: 30%;
+  body .site-content article {
+    margin-bottom: 20px;
   }
   /* SHELL STYLES
 *****************************************************************/
@@ -308,6 +305,36 @@ p {
     box-shadow: none;
   }
   /*  ******************************** MENUS AND NAVIGATION ********************************  */
+  .main-navigation .menu-toggle {
+    background: #3b6793;
+    background: -moz-linear-gradient(top, #3b6793 13%, #122a43 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #3b6793), color-stop(100%, #122a43));
+    background: -webkit-linear-gradient(top, #3b6793 13%, #122a43 100%);
+    background: -o-linear-gradient(top, #3b6793 13%, #122a43 100%);
+    background: -ms-linear-gradient(top, #3b6793 13%, #122a43 100%);
+    background: linear-gradient(to bottom, #3b6793 13%, #122a43 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b6793', endColorstr='#122a43', GradientType=0);
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    height: 54px;
+  }
+  .main-navigation .nav-menu.toggled-on {
+    background: #791414;
+    width: 100%;
+  }
+  .main-navigation .nav-menu.toggled-on li {
+    padding: 0;
+  }
+  .main-navigation .nav-menu.toggled-on li a {
+    line-height: 3.5rem;
+  }
+  .main-navigation .nav-menu.toggled-on li a:hover {
+    background-color: white;
+    color: #791414;
+  }
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
   footer[role="contentinfo"] {
@@ -348,10 +375,16 @@ p {
 \* ---------------------------------------------- */
   /* GENERAL STYLES
 *****************************************************************/
+  body .widget-area {
+    width: 30%;
+  }
   /* SHELL STYLES
 *****************************************************************/
   /*  ******************************** HEADER ********************************  */
   /*  ******************************** MENUS AND NAVIGATION ********************************  */
+  .menu-navigation {
+    height: 54px;
+  }
   /*  ******************************** SIDEBAR ********************************  */
   /*  ******************************** FOOTER ********************************  */
   footer .inner-wrap {

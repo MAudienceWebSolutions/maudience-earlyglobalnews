@@ -53,9 +53,10 @@
                 max-width: 1040px;
                 padding: 20px;
                 overflow: hidden; //this clears the float of direct child div #primary
+                margin-bottom: 50px;
             }
 
-            .widget-area { width: 30%; }
+            .site-content article { margin-bottom: 20px; }
         }
 
 /* SHELL STYLES
@@ -72,7 +73,40 @@
                 img { box-shadow: none; }
             }
         }
+
     /*  ******************************** MENUS AND NAVIGATION ********************************  */
+
+        .main-navigation {
+            .menu-toggle {
+                .egn-gradient-bluelite;
+                height: 100%;
+                width: 100%;
+                text-transform: uppercase;
+                color: white;
+                border: none;
+                height: 54px;
+            }
+
+            .nav-menu.toggled-on {
+                background: @child-color-maroon;
+                width: 100%;
+
+                li {
+                    padding: 0;
+
+                    a {
+                        line-height: 3.5rem;
+                        
+                        &:hover { 
+                            background-color: white;
+                            color: @child-color-maroon;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
     /*  ******************************** SIDEBAR ********************************  */
     /*  ******************************** FOOTER ********************************  */
 
