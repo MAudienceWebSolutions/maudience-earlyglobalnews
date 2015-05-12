@@ -11,3 +11,6 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  maudience-custom-theme
 */
+
+.blog header,
+.blog .entry-header .entry-title { margin-bottom: 0; }
