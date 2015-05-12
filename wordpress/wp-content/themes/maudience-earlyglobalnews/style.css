@@ -12,5 +12,9 @@
  Text Domain:  maudience-custom-theme
 */
 
-.blog header,
-.blog .entry-header .entry-title { margin-bottom: 0; }
+.blog h1,
+.blog .site-content article,
+.blog .entry-title { padding-bottom: 0; font-size: 16px; font-weight: normal; margin-bottom: 0; }
+
+.blog .site-content article { margin-bottom: 8px; font-size: 16px; }
+.blog .site-content article .entry-title a { font-size: 16px; }
