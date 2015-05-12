@@ -42,7 +42,7 @@ get_header(); ?>
 						<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
 						<?php the_post_thumbnail(); ?>
 						<?php endif; ?>
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					</header>
 
 					<div class="entry-content">
