@@ -25,7 +25,7 @@ get_header(); ?>
 				$args = array( 'numberposts' => '1' );
 				$recent_posts = wp_get_recent_posts( $args );
 				foreach( $recent_posts as $recent ){
-					echo '<h1><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </h1> ';
+					echo '<h1><a class="register-popup" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </h1> ';
 					$my_postid = $recent["ID"];//This is page id or post id
 					$content_post = get_post($my_postid);
 					$content = $content_post->post_content;
@@ -40,6 +40,7 @@ get_header(); ?>
 					}
 				}
 			?>
+			<a class="register-button" href="/register/">Register Here</a>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->

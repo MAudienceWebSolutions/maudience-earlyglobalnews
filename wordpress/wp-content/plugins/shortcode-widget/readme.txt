@@ -1,9 +1,11 @@
 === Shortcode Widget ===
 Contributors: gagan0123
 Tags: Shortcode, Widget
+Requires at least: 3.1
+Tested up to: 4.2.2
 Requires at least: 3.3
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,8 +14,7 @@ Adds a text-like widget that allows you to write shortcode in it.
 == Description ==
 
 Adds a text-like widget that allows you to write shortcode in it. (Just whats missing in the default text widget)
-To test the widget you can add the widget and use the shortcode "[shortcode_widget_test]", it will display "It works" on the fronte
-nd and this will confirm the widget does work.
+To test the widget you can add the widget and use the shortcode "[shortcode_widget_test]", it will display "It works" on the frontend and this will confirm the widget does work.
 
 == Installation ==
 
@@ -35,3 +36,6 @@ nd and this will confirm the widget does work.
 
 = 1.0 = 
 * Tested with WP 4.0
+
+= 1.1 =
+* Reflecting the changes that have been done to the default text widget over the years
